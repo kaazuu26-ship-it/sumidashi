@@ -5,21 +5,26 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#050a07;--bg2:#0b140e;--ng:#3df56e;--yg:#c8f23a;--lb:#8bd23c;--tx:#eef5ef;--sub:#a9b8ad;--card:#f1f4f1;--ink:#14231c}
-body{background:#000;color:var(--tx);font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;line-height:1.7}
-main{max-width:540px;margin:0 auto;background:var(--bg);padding-bottom:92px;position:relative;overflow:hidden}
+:root{--bg:#050a07;--ng:#3df56e;--yg:#c8f23a;--lb:#8bd23c;--gr:#1f8f4a;--sub:#a9b8ad;--card:#f1f4f1;--ink:#14231c}
+body{background:#000;color:#eef5ef;font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;line-height:1.75}
+main{max-width:540px;margin:0 auto;background:var(--bg);padding-bottom:96px;overflow:hidden}
 img,video{display:block;width:100%;height:auto}
-.net{background:radial-gradient(120% 60% at 0% 0%,rgba(61,245,110,.28),transparent 55%),radial-gradient(100% 50% at 100% 100%,rgba(61,245,110,.22),transparent 55%),var(--bg)}
-section{padding:34px 20px}
-.sec{border-top:1px solid rgba(61,245,110,.18)}
+section{padding:40px 20px}
+.dk{background:var(--bg)}
+.net{background:radial-gradient(120% 55% at 0% 0%,rgba(61,245,110,.30),transparent 55%),radial-gradient(100% 50% at 100% 100%,rgba(61,245,110,.22),transparent 55%),var(--bg)}
+.lt{background:#eceff0;color:var(--ink)}
+.lt p{color:#3b4742}
 p{font-size:15px;color:var(--sub);margin-bottom:10px}
-b.g{color:var(--ng)}
-.k{font-size:12px;letter-spacing:.2em;color:var(--ng);font-weight:700}
-h1{font-size:31px;line-height:1.3;font-weight:900;color:#fff;margin:8px 0 10px}
+.g{color:var(--ng);font-weight:700}.lt .g{color:var(--gr)}
+.k{font-size:12px;letter-spacing:.2em;color:var(--ng);font-weight:700}.lt .k{color:var(--gr)}
+h1{font-size:31px;line-height:1.3;font-weight:900;color:#fff;margin:8px 0 8px}
 h1 em{font-style:normal;color:var(--yg)}
-h2{font-size:25px;line-height:1.35;font-weight:900;color:#fff;margin:6px 0 14px;text-align:center}
+h2{font-size:27px;line-height:1.35;font-weight:900;color:#fff;margin:6px 0 16px;text-align:center}
 h2 em{font-style:normal;color:var(--yg)}
-.lead{font-size:15px;color:#d4e0d7;text-align:center}
+.lt h2{color:#0b0f0c}.lt h2 em{color:var(--gr)}
+h3{font-size:19px;font-weight:900;color:#fff;border-left:5px solid var(--ng);padding-left:10px;margin:18px 0 8px;line-height:1.4}
+.lt h3{color:#0b0f0c;border-left-color:var(--gr)}
+.lead{font-size:15px;color:#d4e0d7;text-align:center}.lt .lead{color:#3b4742}
 .hero{padding:0}
 .hero .ph{position:relative}
 .hero .ph:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,10,7,0) 50%,var(--bg) 100%)}
@@ -29,33 +34,43 @@ h2 em{font-style:normal;color:var(--yg)}
 .offer .off{display:inline-block;background:#bf0000;color:#fff;font-weight:900;font-size:13px;border-radius:999px;padding:2px 12px;margin:4px 0}
 .offer .now{font-size:44px;font-weight:900;line-height:1.1;color:var(--ink)}.offer .now small{font-size:13px;font-weight:700}
 .offer .sub{font-size:12px;color:#3b4742;margin-top:2px}
-.btn{display:block;background:#06c755;color:#fff;font-weight:900;font-size:19px;line-height:1.4;text-decoration:none;border-radius:999px;padding:17px 10px;text-align:center;margin:12px 0 6px;box-shadow:0 0 0 2px rgba(255,255,255,.12),0 6px 18px rgba(6,199,85,.35)}
+.btn{display:block;background:#06c755;color:#fff;font-weight:900;font-size:19px;line-height:1.4;text-decoration:none;border-radius:999px;padding:17px 10px;text-align:center;margin:14px 0 6px;box-shadow:0 0 0 2px rgba(255,255,255,.12),0 6px 18px rgba(6,199,85,.35)}
 .btn small{display:block;font-size:12px;font-weight:700;opacity:.95}
 .mini{font-size:12px;color:var(--sub);text-align:center}
 .cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0}
 .c3{background:var(--card);color:var(--ink);border-radius:12px;padding:12px 4px;text-align:center}
-.c3 b{display:block;font-size:23px;color:#1f8f4a;line-height:1.1}.c3 span{font-size:11px;color:#5a6862}
-.photo{border-radius:14px;overflow:hidden;margin:14px 0;border:1px solid rgba(61,245,110,.25)}
-.cap{font-size:12px;color:var(--sub);text-align:center;margin-top:6px}
+.c3 b{display:block;font-size:23px;color:var(--gr);line-height:1.1}.c3 span{font-size:11px;color:#5a6862;display:block}
+.photo{border-radius:14px;overflow:hidden;margin:14px 0}
+.dk .photo,.net .photo{border:1px solid rgba(61,245,110,.25)}
+.cap{font-size:12px;color:var(--sub);text-align:center;margin-top:6px}.lt .cap{color:#5a6862}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
 .cell{background:var(--card);color:var(--ink);border-radius:12px;padding:14px 12px}
-.cell b{display:block;font-size:20px;font-weight:900;color:#1f8f4a;line-height:1.25;margin-bottom:4px}
+.lt .cell{background:#fff}
+.cell b{display:block;font-size:20px;font-weight:900;color:var(--gr);line-height:1.25;margin-bottom:4px}
 .cell span{font-size:12px;color:#3b4742;line-height:1.5;display:block}
-.flow{margin:14px 0}
-.fl{background:var(--card);color:var(--ink);border-radius:14px;padding:14px;text-align:center;font-weight:900;font-size:22px}
+.fl{background:#fff;color:#0b0f0c;border:3px solid #0b0f0c;border-radius:14px;padding:12px;text-align:center;font-weight:900;font-size:22px}
 .fl small{display:block;font-weight:400;font-size:13px;color:#3b4742;margin-top:2px}
-.ar{text-align:center;color:var(--ng);font-size:22px;line-height:1.2;margin:4px 0}
-.lab{display:inline-block;background:var(--lb);color:#0b140e;font-weight:900;font-size:13px;border-radius:8px;padding:2px 10px;margin-bottom:8px}
+.dk .fl,.net .fl{background:#fff}
+.ar{text-align:center;color:#6b7772;font-size:20px;line-height:1.2;margin:5px 0}
+.warn{background:#fff;border:3px solid #c0001a;border-radius:6px;padding:20px 16px;margin:16px 0;color:var(--ink)}
+.warn .wt{text-align:center;color:#c0001a;font-weight:900;font-size:21px;line-height:1.4;margin-bottom:10px}
+.warn p{color:#26302b;font-size:14px}
+.warn .q{background:#eef1ee;border-radius:8px;padding:10px 12px;margin:8px 0;font-size:13px;color:#26302b}
+.warn .q small{display:block;color:#5a6862;font-size:11px;margin-top:2px}
+.hl{background:linear-gradient(transparent 60%,#fff176 60%);font-weight:700}
 .list{list-style:none;margin:12px 0}
 .list li{position:relative;padding-left:26px;font-size:15px;margin-bottom:9px;color:#e3ece5}
-.list li:before{content:"✔";position:absolute;left:0;color:var(--ng);font-weight:700}
+.lt .list li{color:#26302b}
+.list li:before{content:"✔";position:absolute;left:0;color:var(--ng);font-weight:700}.lt .list li:before{color:var(--gr)}
+.shield{display:flex;align-items:center;justify-content:center;gap:10px;background:#dfe6e1;border-radius:8px;padding:14px;margin:0 -20px 16px;font-size:24px;font-weight:900;color:#2b3a33}
+.big{font-size:30px;font-weight:900;text-align:center;line-height:1.35;color:#0b0f0c;margin:10px 0}
 .rv{background:var(--card);color:var(--ink);border-radius:12px;padding:14px 16px;margin:10px 0}
 .rv .st{color:#f5b400;font-size:13px;letter-spacing:.1em}.rv .st em{font-style:normal;color:#5a6862;font-size:11px;margin-left:6px}
 .rv p{margin:6px 0 4px;color:var(--ink);font-size:14px}.rv small{font-size:11px;color:#5a6862}
-.note{font-size:11px;color:#7f8f84}
-.spec{width:100%;border-collapse:collapse;font-size:13px;margin:10px 0;background:var(--card);color:var(--ink);border-radius:12px;overflow:hidden}
-.spec th,.spec td{padding:10px 12px;text-align:left;border-bottom:1px solid #d7ded9;vertical-align:top}
-.spec th{width:34%;background:#e4eae5;font-weight:700}
+.note{font-size:11px;color:#7f8f84}.lt .note{color:#6b7772}
+.spec{width:100%;border-collapse:collapse;font-size:13px;margin:10px 0;background:#fff;color:var(--ink)}
+.spec th,.spec td{padding:10px 12px;text-align:left;border:1px solid #d7ded9;vertical-align:top}
+.spec th{width:34%;background:#e9eeea;font-weight:700}
 .steps .st2{display:flex;gap:12px;margin:12px 0;align-items:flex-start}
 .steps .st2 b{flex:none;width:30px;height:30px;border-radius:50%;background:var(--ng);color:#0b140e;display:flex;align-items:center;justify-content:center;font-size:14px}
 .steps .st2 p{margin:0;color:#e3ece5}
@@ -65,7 +80,7 @@ h2 em{font-style:normal;color:var(--yg)}
 .info th,.info td{border-bottom:1px solid #223329;padding:8px 4px;text-align:left;vertical-align:top;color:#d4e0d7}
 .info th{width:34%;font-weight:600;white-space:nowrap}.info a{color:var(--ng)}
 details{background:#101c14;border-radius:8px;padding:12px 14px;margin-bottom:16px}summary{cursor:pointer;font-weight:600;color:#e3ece5}
-details h3{font-size:13px;margin:12px 0 4px;color:#e3ece5}details ul{padding-left:18px}details p,details li{color:#a9b8ad;font-size:13px}
+details h3{font-size:13px;margin:12px 0 4px;color:#e3ece5;border:0;padding:0}details ul{padding-left:18px}details p,details li{color:#a9b8ad;font-size:13px}
 .copy{text-align:center;color:#6f8076;font-size:11px}
 .cta{position:fixed;left:0;right:0;bottom:0;padding:9px 14px calc(9px + env(safe-area-inset-bottom));background:rgba(5,10,7,.96);box-shadow:0 -2px 14px rgba(0,0,0,.5);text-align:center;z-index:10}
 .cta a{display:block;max-width:512px;margin:0 auto;background:#06c755;color:#fff;font-weight:900;font-size:17px;text-decoration:none;border-radius:999px;padding:13px 10px}
@@ -88,6 +103,7 @@ fbq('track', 'PageView');
 </head><body>
 <main>
 
+<!-- 1 商品＋価格＋ボタン（VOICE：商品写真・価格・カート） -->
 <section class="hero net">
 <div class="ph"><img src="img/hero_crop.jpg" alt="レーザー墨出し器"></div>
 <div class="tx">
@@ -105,22 +121,23 @@ fbq('track', 'PageView');
 </div>
 </section>
 
-<section class="sec net">
-<div class="k" style="text-align:center">REVIEW &amp; RANKING</div>
+<!-- 2 実績（VOICE：ランキング5冠獲得） -->
+<section class="dk">
+<div class="k" style="text-align:center">RANKING &amp; REVIEW</div>
 <h2>楽天市場で、<br><em>選ばれ続けています。</em></h2>
+<div class="photo"><img src="img/imgrc0108557384.jpg" alt="楽天ランキング" loading="lazy"></div>
 <div class="cards3">
 <div class="c3"><b>★4.54</b><span>この商品の<br>レビュー131件</span></div>
 <div class="c3"><b>0件</b><span>★1・★2の<br>レビュー</span></div>
 <div class="c3"><b>★4.6</b><span>店舗レビュー<br>15,444件</span></div>
 </div>
-<div class="photo"><img src="img/imgrc0108557384.jpg" alt="楽天ランキング" loading="lazy"></div>
 <p class="note" style="text-align:center">楽天市場 relief10（2026年9月時点）</p>
 </section>
 
-<section class="sec">
+<!-- 3 製品の見せ場（VOICE：かつてない〜／フルライン構成） -->
+<section class="lt">
 <div class="k" style="text-align:center">FULL LINE</div>
-<h2>床・壁・天井に、<br><em>線が一周。</em></h2>
-<p class="lead">3×360°・16ライン。置いてスイッチを入れるだけで、基準線が一度に出ます。</p>
+<h2>置くだけで、<br><em>床・壁・天井に線が一周。</em></h2>
 <div class="photo"><video src="img/v_lines.mp4" poster="img/v_lines.jpg" autoplay muted loop playsinline preload="metadata"></video></div>
 <p class="cap">実際の撮影映像</p>
 <div class="grid">
@@ -131,21 +148,51 @@ fbq('track', 'PageView');
 </div>
 </section>
 
-<section class="sec net">
+<!-- 4 作り・届くまでの流れ（VOICE：製造工程の黒い箱と矢印） -->
+<section class="dk">
+<div class="k" style="text-align:center">FROM FACTORY TO YOU</div>
+<h2>お手元に届くまで、<br><em>日本の会社が責任を持ちます。</em></h2>
+<div class="fl">提携工場で製造<small>製品は中国の提携工場で作っています</small></div>
+<div class="ar" style="color:var(--ng)">▼</div>
+<div class="fl">当社で検品<small>日本の会社が検品します</small></div>
+<div class="ar" style="color:var(--ng)">▼</div>
+<div class="fl">国内の倉庫から発送<small>最短翌日にお届け</small></div>
+<p style="margin-top:14px;text-align:center">日本語の取扱説明書は自社で作成。届く前でも、メールでお送りできます。</p>
+</section>
+
+<!-- 5 使い方（VOICE：手元で操作） -->
+<section class="lt">
 <div class="k" style="text-align:center">HOW TO USE</div>
 <h2>使い方は、<br><em>3つだけ。</em></h2>
-<div class="flow">
 <div class="fl">置く<small>床・壁・テーブル。三脚がなくても始められます</small></div>
 <div class="ar">▼</div>
 <div class="fl">スイッチを入れる<small>±3°までは自動で水平を取ります</small></div>
 <div class="ar">▼</div>
 <div class="fl">線に合わせて当てる<small>一回でまっすぐ決まります</small></div>
-</div>
 <div class="photo"><video src="img/v_board.mp4" poster="img/v_board.jpg" autoplay muted loop playsinline preload="metadata"></video></div>
 <p class="cap">線に合わせて当てるだけ（実際の撮影映像）</p>
+<h3>リモコン・専用アプリで操作</h3>
+<p>離れた場所から、線の明るさや切り替えができます。</p>
 </section>
 
-<section class="sec">
+<!-- 6 問題→解決（VOICE：この問題を解決するため…） -->
+<section class="dk">
+<div class="k" style="text-align:center">PROBLEM &amp; SOLUTION</div>
+<h2>現場でよくある困りごとを、<br><em>ひとつずつ解決。</em></h2>
+<h3>壁際まで線が出ない</h3>
+<p>壁から<b class="g">7mm</b>・床から6mmまで寄って照射できます。</p>
+<div class="photo"><video src="img/v_wall.mp4" poster="img/v_wall.jpg" autoplay muted loop playsinline preload="metadata"></video></div>
+<p class="cap">壁から7mm。際まで線が出ます（実際の撮影映像）</p>
+<h3>日中の屋外で線が見えにくい</h3>
+<p>昼間の屋外でもよく見えるグリーンレーザーと、明るい発光ダイオードを使っています。</p>
+<div class="photo"><img src="img/b0cnrh8l46_10.jpg" alt="室内・室外どこでも" loading="lazy"></div>
+<h3>置く場所がない・三脚がない</h3>
+<p>マグネットベース、リフティングテーブル、ミニ三脚ベースで、様々な設置に対応します。</p>
+<div class="photo"><img src="img/b0cnrh8l46_20.jpg" alt="様々な設置に対応" loading="lazy"></div>
+</section>
+
+<!-- 7 バッテリー（VOICE：バッテリー） -->
+<section class="lt">
 <div class="k" style="text-align:center">POWER</div>
 <h2>バッテリーは<em>2個</em>が標準。<br>予備も買える。</h2>
 <p class="lead">6000mAhを2個同梱。交互に使えば、16本のレーザーを最大光度で<b class="g">12時間以上</b>。</p>
@@ -153,30 +200,41 @@ fbq('track', 'PageView');
 <p>予備バッテリーは単品でも販売します。「電池が死んだら本体ごと買い替え」にはなりません。</p>
 </section>
 
-<section class="sec net">
-<div class="k" style="text-align:center">ANYWHERE</div>
-<h2>屋内も屋外も。<br><em>様々な設置に対応。</em></h2>
-<div class="photo"><img src="img/b0cnrh8l46_10.jpg" alt="室内・室外どこでも" loading="lazy"></div>
-<div class="photo"><img src="img/b0cnrh8l46_20.jpg" alt="様々な設置に対応" loading="lazy"></div>
-<div class="photo"><video src="img/v_wall.mp4" poster="img/v_wall.jpg" autoplay muted loop playsinline preload="metadata"></video></div>
-<p class="cap">壁から7mm。際まで線が出ます（実際の撮影映像）</p>
+<!-- 8 注意喚起（VOICE：アフターメンテナンスのない墨出し器にご注意下さい） -->
+<section class="lt" style="padding-top:8px">
+<div class="warn">
+<div class="wt">⚠ 買ったあとのサポートがない<br>墨出し器にご注意ください</div>
+<p>1万円台の海外メーカーの墨出し器は、不満の大半が<span class="hl">買った直後ではなく、数か月後</span>に起きています。</p>
+<div class="q">「1年でバッテリーが2個とも死んだ。本体に直挿しできず、バッテリーだけの購入もできない」<small>Amazon ★1レビューより（要旨）</small></div>
+<div class="q">「工場が海外で日本で整備していない、の決まり文句。たらい回し」<small>Amazon ★1レビューより（要旨）</small></div>
+<div class="q">「3年保証といっても、外国製でサイトが外国語。もう1つのバッテリーが壊れたら捨てる」<small>Amazon ★2レビューより（要旨）</small></div>
+<p class="note">※他社商品の購入者レビューを、意味を変えずに要約したものです。</p>
+</div>
 </section>
 
-<section class="sec">
+<!-- 9 解決（VOICE：安心の1年保証／専用サポート） -->
+<section class="dk">
 <div class="k" style="text-align:center">SUPPORT</div>
-<h2>買ったあとも、<br><em>日本語で対応します。</em></h2>
+<h2>だから、買ったあとも<br><em>日本語で対応します。</em></h2>
 <ul class="list">
 <li>日本の会社が、日本語で対応します</li>
-<li>取扱説明書は自社で作った日本語版（届く前でもメールで送れます）</li>
-<li>不具合は写真か短い動画で確認。確認しだい<b class="g">交換品をすぐ発送</b></li>
+<li>不具合は写真か短い動画をLINEかメールで送るだけ。確認しだい<b class="g">交換品をすぐ発送</b>（本体ごと送り返してから待つ、にはしません）</li>
 <li>ご購入から<b class="g">12か月の製品保証</b>（注文番号が保証書代わり）</li>
-<li>国内の倉庫から発送。<b class="g">最短翌日</b>にお届け</li>
+<li>予備バッテリーは単品で購入できます</li>
 </ul>
 <div class="photo"><img src="img/imgrc0108557429.jpg" alt="" loading="lazy"></div>
-<p class="note">※製品は中国の提携工場で製造し、当社が検品・保証・サポートを行っています。</p>
 </section>
 
-<section class="sec net">
+<section class="lt">
+<div class="shield">🛡 安心の12か月保証</div>
+<div class="big">不具合が出たら、<br>交換品をすぐお送りします</div>
+<p style="text-align:center">購入から12か月。LINEかメールで、写真か短い動画を送ってください。確認しだい、国内の倉庫から発送します。</p>
+<div class="shield" style="margin-top:20px">💬 購入後の相談窓口はLINE</div>
+<p style="text-align:center">使い方・不具合・保証の相談は、登録したLINEからできます。</p>
+</section>
+
+<!-- 10 レビュー -->
+<section class="net">
 <div class="k" style="text-align:center">VOICE OF CUSTOMERS</div>
 <h2>現場の方の声。</h2>
 <div class="rv"><div class="st">★★★★★<em>5.0</em></div><p>今までの大手メーカーの物と変わらず、界壁から1cm位の所まで360度出ます。大手の物は大きく重いのですが、こちらは小さく助かります</p><small>男性50代・2024年7月</small></div>
@@ -188,11 +246,13 @@ fbq('track', 'PageView');
 <a class="btn" href="https://liff.line.me/2002480755-vwYZvRdd" data-pos="review">LINEで友だち追加して<br>1,000円OFFクーポンをもらう</a>
 </section>
 
-<section class="sec">
+<!-- 11 セット内容・仕様（VOICE：製品仕様・セット／オプション） -->
+<section class="lt">
 <div class="k" style="text-align:center">SET &amp; SPEC</div>
 <h2>届いたその日から使える<br><em>12点セット。</em></h2>
 <p class="lead">本体・バッテリー2個・充電器・リモコン・360°マグネットベース・固定用鉄板・リフティングテーブル・ミニ三脚ベース・転換ネジ・収納バッグ・日本語説明書。</p>
 <div class="photo"><img src="img/b0cnrh8l46_26.jpg" alt="付属品" loading="lazy"></div>
+<h3>製品仕様</h3>
 <table class="spec">
 <tr><th>ライン</th><td>3×360°・グリーンレーザー16ライン</td></tr>
 <tr><th>精度</th><td>水平・垂直 ±0.2mm/m（作業範囲 半径30m）</td></tr>
@@ -206,7 +266,8 @@ fbq('track', 'PageView');
 </table>
 </section>
 
-<section class="sec net">
+<!-- 12 価格・手順・ボタン -->
+<section class="net">
 <div class="k" style="text-align:center">PRICE</div>
 <h2>楽天市場で販売中。<br><em>LINE登録で1,000円引き。</em></h2>
 <div class="offer">
